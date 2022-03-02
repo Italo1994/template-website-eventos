@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-center-start {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-size: 16px;
+    width: 100%;
+}
+
+#header {
+    display: flex;
+    width: 100%;
+    height: 530px;
+    flex-direction: column;
+    color: #FFF;
+    background-image: linear-gradient(90deg, rgba(19, 15, 2, 0.809), rgba(38, 4, 1, .5)), url("../img/header1.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#header-superior {
+    background-color: rgba(58, 57, 57, 0.9);
+    height: 40px;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#header-superior span {
+    margin: 10px;
+}
+
+#header-inferior {
+    background-color: #FFF;
+    height: 80px;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 40px;
+}
+
+#logo {
+    font-size: 22px !important;
+}
+
+#header-inferior div {
+    width: 30%;
+    max-width: 100%;
+    padding-left: 40px;
+}
+
+nav {
+    width: 70%;
+    max-width: 100%;
+}
+
+li a svg {
+    width: 20px;
+    height: 15px;
+}
+
+#header-inferior ul {
+    list-style: none;
+}
+
+#header-inferior ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+#header-inferior a {
+    color: #000;
+    width: 100%;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#header-inferior a:hover {
+    color:rgba(38, 4, 1, .8);
+    transition: all .8s;
+}
+
+.botao-custom {
+    padding: 12px 15px;
+    background-color: rgb(62, 57, 51);
+    border-radius: 25px;
+}
+
+.botao-custom:hover {
+    color: #FFF !important;
+    transition: all 1s;
+}
+
+#area-apresentacao {
+    z-index: 1;
+    margin-top: 150px;
+    padding: 10px;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.area-texto {
+    width: 600px;
+    max-width: 100%;
+    text-align: center;
+    padding: 5px;
+}
+
+.titulo1 {
+    font-size: 45px;
+}
+
+p {
+    margin-top: 15px;
+}
+
+
+
+/* ==== MEDIA QUERIES ==== */
+@media screen and (max-width: 550px) {
+    .redes-sociais {
+        display: none;
+    }
+
+    #menu-principal {
+        display: none;
+    }
+}

@@ -26,6 +26,10 @@
     align-items: center;
 }
 
+.vh-100 {
+    height: 100vh;
+}
+
 html {
     height: 100%;
     width: 100%;
@@ -75,6 +79,7 @@ a:link {
     width: 100%;
     padding: 10px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -89,7 +94,7 @@ a:link {
 }
 
 nav {
-    width: 70%;
+    width: 80%;
     max-width: 100%;
     padding-right: 40px;
 }
@@ -146,7 +151,7 @@ svg {
     z-index: 1;
     padding: 0 20px;
     width: 100%;
-    height: 500px;
+    height: 450px;
     max-width: 100%;
     display: flex;
     justify-content: space-between;
@@ -194,7 +199,7 @@ img {
     width: 100%;
     height: 100%;
 }
-.who img {
+.rounded-img {
     border-radius: 5px;
     width: 100%;
     height: 100%;
@@ -202,7 +207,6 @@ img {
 
 /* ==== SEÇÃO DE QUEM SOMOS ==== */
 .who {
-    /* padding: 100px 50px 20px 50px; */
     text-align: justify;
 }
 
@@ -216,6 +220,12 @@ img {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 10px;
+}
+
+/* ==== NEXT EVENTS ==== */
+#next-events a:hover {
+    opacity: .9;
+    transition: all 1s;
 }
 
 /* ==== MEDIA QUERIES ==== */
@@ -267,7 +277,7 @@ img {
 
 .titulo2 {
     font-size: 35px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .text-center {

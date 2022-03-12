@@ -192,13 +192,10 @@ svg {
     width: 1200px;
     max-width: 100%;
     margin: 0 auto;
-    padding: 100px 50px 20px 50px;
+    padding: 100px 25px 100px 25px;
 }
 
-img {
-    width: 100%;
-    height: 100%;
-}
+
 .rounded-img {
     border-radius: 5px;
     width: 100%;
@@ -207,7 +204,12 @@ img {
 
 /* ==== SEÇÃO DE QUEM SOMOS ==== */
 .who {
-    text-align: justify;
+    text-align: center;
+    display: grid;
+}
+
+.grid-custom {
+    grid-template-columns: 2fr 3fr !important;
 }
 
 .grid-col {
@@ -222,11 +224,34 @@ img {
     column-gap: 10px;
 }
 
+.align-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-div {
+    height: 250px;
+    padding: 5px;
+}
+
+.custom-border {
+    border-bottom: 1px solid rgb(96, 41, 91);
+}
+
 /* ==== NEXT EVENTS ==== */
-#next-events a:hover {
+#next-events img {
+    width: 100%;
+    height: 100%;
+}
+
+#next-events img:hover {
     opacity: .9;
     transition: all 1s;
+    position: relative;
 }
+
 
 /* ==== MEDIA QUERIES ==== */
 @media screen and (max-width: 772px) {
@@ -255,11 +280,19 @@ img {
         grid-template-rows: repeat(3, 1fr);
         row-gap: 10px;
     }
+
+    .grid-custom {
+        grid-template-columns: 1fr !important;
+    }
 }
 
 /* ==== TIPOGRAFIA ==== */
 .bg-white {
     background-color: #FFF !important;
+}
+
+.bg-purple {
+    background-color: rgb(96, 41, 91);
 }
 
 .purple {
@@ -276,7 +309,7 @@ img {
 }
 
 .titulo2 {
-    font-size: 35px;
+    font-size: 45px;
     margin-bottom: 40px;
 }
 

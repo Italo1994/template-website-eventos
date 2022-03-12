@@ -8,6 +8,12 @@
         <link rel="stylesheet" href="./assets/css/styles.css">
 
         <script src="https://kit.fontawesome.com/fb53d33af1.js" crossorigin="anonymous"></script>
+        <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     </head>
     <body>
         <header id="header">
@@ -60,9 +66,9 @@
                 <a href="#" class="seta flex-center"> <i class='fas fa-angle-right' style='font-size:30px;color:#000'></i> </a>
             </div>
 
-            <section class="who content grid-col">
+            <section class="who content grid-col grid-custom">
                 <div class="area-imagem">
-                    <img class="rounded-img" src="./assets/img/header1.jpg" alt="imagem quem somos" />
+                    <img class="rounded-img" src="https://pixabay.com/get/gdb0b9ce5df2d388d6ec778a01a44ed8109864e3435d592b3798586bab818d8e55ad3aae7aecc6a7348f5f6e11ae6517cf59bb402deb3f1dd4e090d01b5851889107e3e9259934541cebc4f3cec78f60a_640.jpg" alt="imagem quem somos" />
                 </div>
                 <div class="descricao-quem-somos">
                     <h2 class="titulo2"> <span class="purple">Excellence</span> since 2000!</h2>
@@ -84,13 +90,13 @@
                 </div>
                 <div class="grid-3">
                     <div>
-                        <a href="#" > <img class="img-api" src="./assets/img/background.jpg" alt="" /> </a>
+                        <a href="#" > <img class="img-api rounded-img" src="https://pixabay.com/get/gfa67e4f2bbab7eeb5a79a9baead118bbd7835e74b7ccf2d75b702e3315402945ddcf6d6da502f00923d74c308578020052078dee1e104e9085e6af386487b7aca85eaa470d379299886cb5284a5cbde2_640.jpg" alt="" /> </a>
                     </div>
                     <div>
-                        <a href="#" > <img class="img-api" src="./assets/img/background.jpg" alt="" /> </a>
+                        <a href="#" > <img class="img-api rounded-img" src="https://pixabay.com/get/gcd9403b4f549348955deef88ba7014a5de3e072ef930e2694588d828236ba8b7ebb32a4dea511555a26c672721d03c7d823098cd3d14987c12cfe10d4e9b53cb99e0a7f756c73e0ee0027ddc6175d9b8_640.jpg" alt="" /> </a>
                     </div>
                     <div>
-                        <a href="#" > <img class="img-api" src="./assets/img/header1.jpg" alt="" /> </a>
+                        <a href="#" > <img class="img-api rounded-img" src="./assets/img/header1.jpg" alt="" /> </a>
                     </div>
                 </div>
             </section>
@@ -101,11 +107,59 @@
                 </div>
                 <div class="grid-col">
                     <div>
-                        <a class="rounded-img" href="#"> <img src="./assets/img/background.jpg" alt="" /> </a>
+                        <a class="rounded-img" href="#"> <img class="rounded-img " src="https://pixabay.com/get/g5447191b534edfb0706876e0cd2413408ca78f7076f51b3a3fe2ca1992e37c9136c1f667cbdf581e46bb1b2460349836743238840570c0fe4364150cc21973abc33a61e6a7c2d44ad5fd064168a899cd_640.jpg" alt="" /> </a>
                     </div>
                     <div>
-                        <a class="rounded-img" href="#"> <img src="./assets/img/background.jpg" alt="" /> </a>
+                        <a class="rounded-img" href="#"> <img class="rounded-img" src="https://pixabay.com/get/ga4d006193e672e5a624870c53d9c977bab1d0bc05e523a3e5ad3b0df088a0cf593ccb762f907e8291c9d52f261acaa50c4601e177dd9d1e7d9090d2d3baf65130f0e49e6b4ef8e863e18c0f39ad3fffe_640.jpg" alt="" /> </a>
                     </div>
+                </div>
+            </section>
+
+            <section id="services" class="content">
+                <div>
+                    <h2 class="titulo2 text-center">Our <span class="purple">Services</span> </h2>
+                </div>
+                <div>
+                    <div class="grid-3">
+                        <div class="align-center custom-div">
+                            <i class="material-icons" style="font-size:100px">location_city</i>
+                            <h3>Lorem Ipsum</h3>
+                        </div>
+                        <div class="align-center">
+                            <i class="material-icons" style="font-size:100px">school</i>
+                            <h3>Lorem Ipsum</h3>
+                        </div>
+                        <div class="align-center">
+                            <i class="material-icons" style="font-size:100px">business_center</i>
+                            <h3>Lorem Ipsum</h3>
+                        </div>
+                    </div>
+                    <div class="grid-3">
+                        <div class="align-center custom-div">
+                            <i class="material-icons" style="font-size:100px">local_dining</i>
+                            <h3>Lorem Ipsum</h3>
+                        </div>
+                        <div class="align-center">
+                            <i class="material-icons" style="font-size:100px">local_see</i>
+                            <h3>Lorem Ipsum</h3>
+                        </div>
+                        <div class="align-center">
+                            <i class="material-icons" style="font-size:100px">whatshot</i>
+                            <h3>Lorem Ipsum</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contato" class="content grid-col grid-custom">
+                <div>
+                    <form>
+                        <input type="text" />
+                        <input type="email" />
+                    </form>
+                </div>
+                <div>
+                    <img src="https://pixabay.com/get/g8652c0737f6a5e3d3a97d29ec8d74e9150104db9d4c5640f8f483c713b3985181e2cf5cf2abf870a8536748c5d3a69a7c21ec173292ecf14580dc9eab7672f14a7e398c7fa584255196bf34aa8655c50_640.jpg" />
                 </div>
             </section>
         </main>

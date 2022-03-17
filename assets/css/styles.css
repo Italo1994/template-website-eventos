@@ -56,7 +56,6 @@ a:link {
 }
 
 #header-superior {
-    /* background-color: rgba(58, 57, 57, 0.9); */
     background-color: rgb(96, 41, 91);
     height: 50px;
     width: 100%;
@@ -84,7 +83,7 @@ a:link {
 }
 
 #logo {
-    font-size: 25px !important;
+    font-size: 28px !important;
     font-weight: 700;
 }
 
@@ -98,11 +97,6 @@ nav {
     max-width: 100%;
     padding-right: 40px;
 }
-
-/* li a svg {
-    width: 20px;
-    height: 15px;
-} */
 
 svg {
     width: 25px;
@@ -125,14 +119,12 @@ svg {
 }
 
 #header-inferior a:hover {
-    /* color:rgba(38, 4, 1, .8); */
-    color: rgb(96, 41, 91);
+    color: rgb(90, 11, 83);
     transition: all .8s;
 }
 
 .botao-custom {
     padding: 12px 15px;
-    /* background-color: rgb(62, 57, 51); */
     background-color: rgb(96, 41, 91);
     border-top-left-radius: 15px;
     border-top-left-radius: 10px;
@@ -157,7 +149,6 @@ svg {
     justify-content: space-between;
     align-items: center;
     background-image: linear-gradient(90deg, rgba(34, 55, 139) 5%, rgba(160, 15, 107, 0.5) ), url("../img/header1.jpg");
-    /* background-image: linear-gradient(90deg, rgba(34, 55, 139, 0.809), rgba(112, 43, 87, .5), url("../img/background.jpg") ); */
     background-size: 100% 100%;
     background-repeat: no-repeat;
     color: #FFF;
@@ -190,11 +181,11 @@ svg {
 
 .content {
     width: 1200px;
+    height: 580px;
     max-width: 100%;
     margin: 0 auto;
     padding: 100px 25px 100px 25px;
 }
-
 
 .rounded-img {
     border-radius: 5px;
@@ -202,7 +193,7 @@ svg {
     height: 100%;
 }
 
-/* ==== SEÇÃO DE QUEM SOMOS ==== */
+/* ==== SEÇÃO QUEM SOMOS ==== */
 .who {
     text-align: center;
     display: grid;
@@ -252,6 +243,51 @@ svg {
     position: relative;
 }
 
+
+/* ===== CONTATO ===== */
+#contato {
+    margin-top: 100px;
+}
+
+#contato div {
+    /* border: 1px solid orange; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#contato img {
+    width: 100%;
+    height: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end !important;
+    justify-content: flex-end;
+    padding: 10px 0;
+}
+
+form input {
+    border-radius: 12px;
+    width: 400px;
+    padding: 5px;
+    border: 1px solid black;
+    margin-top: 20px;
+}
+
+form textarea {
+    margin-top: 10px;
+    width: 100% !important;
+}
+
+button {
+    width: 100px;
+    padding: 5px;
+    margin-top: 5px;
+}
 
 /* ==== MEDIA QUERIES ==== */
 @media screen and (max-width: 772px) {
